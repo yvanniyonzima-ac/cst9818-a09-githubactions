@@ -154,14 +154,3 @@ resource "azurerm_linux_virtual_machine" "vm" {
   custom_data = filebase64("${path.module}/init.sh")
 
 }
-
-# Output resource grouop name
-output "resource_group_name" {
-  value = azurerm_resource_group.rg.name
-}
-# Output public IP address
-output "public_ip_address" {
-  value = azurerm_public_ip.public_ip.ip_address
-}
-
-# Comment to bypass jitterbit check
