@@ -104,7 +104,7 @@ resource "azurerm_network_security_group" "nsg" {
 }
 
 # Create network interface
-resource "azurerm_network_interface"  {
+resource "azurerm_network_interface" "nic" {
   name                = "${var.labelPrefix}-A05-NIC"
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
