@@ -153,7 +153,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
   # Custom data for cloud-init
   custom_data = filebase64("${path.module}/init.sh")
 
-}
+}}
 
 # Output resource grouop name
 output "resource_group_name" {
