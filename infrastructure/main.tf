@@ -116,7 +116,7 @@ resource "azurerm_network_interface" "nic" {
     public_ip_address_id          = azurerm_public_ip.public_ip.id
   }
 
-}}
+}
 
 # Associate the network security group with the network interface
 resource "azurerm_network_interface_security_group_association" "nic_nsg_association" {
