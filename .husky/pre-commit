@@ -1,0 +1,3 @@
+terrafrom fmt -check -recursive
+terraform validate
+tflint
